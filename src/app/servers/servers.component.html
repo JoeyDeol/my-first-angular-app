@@ -1,2 +1,25 @@
+<label>Server Name</label>
+<!-- Single Direction Data Binding, specifically event binding to collect information from our template. -->
+<!-- <input
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)"
+> -->
+<!-- Below is a Two Way Data Binding Example, using the ngModel Directive -->
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName"
+>
+<!-- Single Direction Data Binding, event binding to collect information from our template (click) & property binding to set html properties [disabled] -->
+<!-- Note: In the case of [disabled] below we are not interaction with the html attribute, we are in fact interacting directly with the html button's disabled property -->
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer($event)"
+>Add Server</button>
+<!-- Single Direction Data Binding, property binding to set the [innerText] html property of the p element -->
+<!-- <p [innerText]="allowNewServer"></p> -->
+<p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
