@@ -2,6 +2,10 @@
 
 This is a practice project meant to help refine my angular fundamentals.
 
+There are two main branches:
+- master: code generated during lessons and any notes associated with that code.
+- assignments: code generated when completing mini assignments.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 ## Development server
